@@ -126,7 +126,7 @@ object MemoryPatcher {
             0x5288480A, // movz w10, #0x4240
             0x72A001EA, // movk w10, #0xf, lsl #16   (int 1000000)
             0x2902268A, // stp w10, w9, [x20, #0x10] (IntScore, score)
-            0x52A7F009, // movz w9, #0x3f80, lsl #16 (float 1.0f)
+            0x52A85909, // movz w9, #0x3f80, lsl #16 (float 100.0f)
             0x29032289, // stp w9, w8, [x20, #0x18]  (percent, perfect = numOfNotes)
             0xF900129F, // str xzr, [x20, #0x20]     (good = 0, bad = 0)
             0xF900169F, // str xzr, [x20, #0x28]     (miss = 0, early = 0)
